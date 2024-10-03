@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.top-area, .bottom-area {
+  flex: 1;
+}
+
+.middle-area {
+  flex: 2;
+}
+
+/*# sourceMappingURL=main.css.map */
