@@ -2,12 +2,12 @@
 
 ### RUN SASS WATCHER
 ```bash
-sass sass:./ --watch
+sass sass:./styles --watch
 ```
 
 ### RUN TAILWIND WATCHER
 ```bash
-npx tailwindcss -i ./main.css -o ./style.css --watch
+npx tailwindcss -i ./styles/main.css -o ./styles/style.css --watch
 ```
 
 ### RUN SERVER

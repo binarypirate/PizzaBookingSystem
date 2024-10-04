@@ -53,13 +53,13 @@ mainFragment.append(
 
         div.append(
             createItemHolder('/images/cheese_pizza.jpg', 'Cheese Pizza', e => {
-                window.location = '/order.php?item_type=cheese_pizza'
+                window.location = '/pages/order.php?item_type=cheese_pizza'
             }),
             createItemHolder('/images/vegetable_pizza.jpg', 'Vegetable Pizza', e => {
-                window.location = '/order.php?item_type=vegetable_pizza'
+                window.location = '/pages/order.php?item_type=vegetable_pizza'
             }),
             createItemHolder('/images/fries.jpg', 'Fries', e => {
-                window.location = '/order.php?item_type=fries'
+                window.location = '/pages/order.php?item_type=fries'
             })
         )
 
@@ -73,6 +73,10 @@ mainFragment.append(
             const h1 = document.createElement('h1');
             h1.classList.add(...('my-button text-3xl bg-blue-500 px-6 py-4 rounded-full text-white font-bold cursor-pointer hover:bg-blue-600'.split(' ')))
             h1.innerText = 'VIEW CART';
+
+            h1.addEventListener('click', e => {
+                window.location = '/pages/cart.php';
+            })
             return h1;
         })());
 

@@ -9,4 +9,16 @@
   flex: 2;
 }
 
+.weight-0\.5 {
+  flex: 0.5;
+}
+
+.weight-1 {
+  flex: 1;
+}
+
+.weight-2 {
+  flex: 2;
+}
+
 /*# sourceMappingURL=main.css.map */
