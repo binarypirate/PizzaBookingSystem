@@ -1,1 +1,5 @@
 /node_modules
+/pbs/node_modules
+/.tmp
+/pbs/src/style.css
+/pbs/src/style.css.map

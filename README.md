@@ -2,15 +2,16 @@
 
 ### RUN SASS WATCHER
 ```bash
-sass sass:./styles --watch
+sass sass:./.tmp --watch
 ```
 
 ### RUN TAILWIND WATCHER
 ```bash
-npx tailwindcss -i ./styles/main.css -o ./styles/style.css --watch
+npx tailwindcss -i ./.tmp/main.css -o ./pbs/src/style.css --watch
 ```
 
 ### RUN SERVER
 ```bash
-php -S localhost:8000 -t ./
+cd pbs
+npm start
 ```
