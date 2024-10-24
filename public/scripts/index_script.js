@@ -53,13 +53,13 @@ mainFragment.append(
 
         div.append(
             createItemHolder('/images/cheese_pizza.jpg', 'Cheese Pizza', e => {
-                window.location = '/pages/order.php?item_type=cheese_pizza'
+                window.location = '/pages/order?item_type=cheese_pizza'
             }),
             createItemHolder('/images/vegetable_pizza.jpg', 'Vegetable Pizza', e => {
-                window.location = '/pages/order.php?item_type=vegetable_pizza'
+                window.location = '/pages/order?item_type=vegetable_pizza'
             }),
             createItemHolder('/images/fries.jpg', 'Fries', e => {
-                window.location = '/pages/order.php?item_type=fries'
+                window.location = '/pages/order?item_type=fries'
             })
         )
 
@@ -75,7 +75,7 @@ mainFragment.append(
             h1.innerText = 'VIEW CART';
 
             h1.addEventListener('click', e => {
-                window.location = '/pages/cart.php';
+                window.location = '/pages/cart';
             })
             return h1;
         })());

@@ -1,6 +1,6 @@
 @echo off
 
 cd ..
-sass sass:./styles --watch
+sass sass:./public/styles --watch
 
 pause

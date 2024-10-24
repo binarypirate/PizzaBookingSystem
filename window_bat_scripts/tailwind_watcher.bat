@@ -1,6 +1,6 @@
 @echo off
 
 cd ..
-npx tailwindcss -i ../styles/main.css -o ../styles/style.css --watch
+npx tailwindcss -i ../public/styles/main.css -o ../public/styles/style.css --watch
 
 pause

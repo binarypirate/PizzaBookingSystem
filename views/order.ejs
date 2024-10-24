@@ -1,12 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pizza Booking System</title>
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
+<%- include('partials/header'); %>
 
 <div class="root w-screen h-screen flex flex-col">
 
@@ -24,6 +16,7 @@
         </div>
         <div class="flex-1 bg-blue-700 flex flex-col justify-center">
 
+            <% if (item_type != 'fries') { %>
             <div class="size-form-group form-group flex gap-3 p-3">
                 <p class="text-3xl text-white bg-blue-500 p-3">Size:</p>
                 <div class="flex gap-2 items-center">
@@ -43,7 +36,7 @@
                     </div>
                 </div>
             </div>
-
+            <% } %>
             <div class="form-group flex gap-3 p-3 items-center">
                 <p class="text-3xl text-white bg-blue-500 p-3">Quantity:</p>
                 <div class="flex-1 flex items-center justify-between">
@@ -77,5 +70,4 @@
 
 <script type="application/javascript" src="/scripts/order_script.js"></script>
 
-</body>
-</html>
+<%- include('partials/footer'); %>

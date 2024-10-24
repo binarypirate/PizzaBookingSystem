@@ -122,7 +122,7 @@ if (itemType === 'cheese_pizza' || itemType === 'vegetable_pizza') {
 }
 
 document.querySelector('.view-cart-button').addEventListener('click', e => {
-    window.location = '/pages/cart.php';
+    window.location = '/pages/cart';
 });
 
 document.querySelector('.add-to-cart-button').addEventListener('click', e => {
@@ -156,5 +156,5 @@ document.querySelector('.add-to-cart-button').addEventListener('click', e => {
         window.localStorage.setItem('pizza_booking_system', JSON.stringify(newData));
     }
 
-    window.location = '/pages/cart.php';
+    window.location = '/pages/cart';
 });
